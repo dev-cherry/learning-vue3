@@ -5,7 +5,7 @@
     </div>
     <div class="bubble-handle-bar">
       <el-button type="primary" @click="dialogVisible = true"
-        >点下试试</el-button
+        >五毛，快！点下试试</el-button
       >
     </div>
   </div>
@@ -57,7 +57,7 @@ export default {
         if (this.points.length <= this.num) {
           this.addCir();
         } else {
-          alert("泡泡吐完了");
+          alert("泡泡吹完了，五毛开心吗");
           clearInterval(this.startTimer);
         }
       }, 1000);
@@ -176,6 +176,7 @@ export default {
       let src = require(`../assets/bubble/circle${
         random < 0 ? "1" : random > 0 ? "2" : ""
       }.png`);
+      // let src = `../img/circle${random < 0 ? "1" : random > 0 ? "2" : ""}.png`;
       circleImg.src = src;
       return circleImg;
     },

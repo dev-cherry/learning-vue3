@@ -19,7 +19,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "五毛想要bubble的个数",
+      default: "五毛想要几个泡泡",
     },
     num: {
       type: Number,
@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     confirm() {
-      alert("success");
+      alert("好嘞，马上给五毛吹泡泡");
       this.$emit("confirm");
       this.$emit("update:num", this.numberValue);
     },
